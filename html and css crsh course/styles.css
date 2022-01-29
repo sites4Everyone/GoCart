@@ -1,0 +1,244 @@
+/* p{
+    font-size: 20px;
+    color: rgb(176, 179, 41);
+    font-family: serif;
+    background-color: rgb(69, 216, 56);
+    text-decoration: wavy;
+    text-align: center;
+}
+ol{
+    line-height: 25px;
+    letter-spacing: 1px;
+    column-count: 3;
+    column-gap: 1px;
+     border-width: 4px;
+    border-style: dotted;
+    border-color: rgb(230, 35, 35);
+    border-bottom: 4px dotted rgb(230, 35, 35);
+    border-top: 10px dashed burlywood;
+    list-style-type: decimal;
+    text-shadow: 2px 2px beige;
+} */
+/* h3.first{
+    font-size: 20px;
+    color: rgb(176, 179, 41);
+    font-family: serif;
+}
+div .first.second{
+    border-width: 4px;
+    border-style: dotted;
+    border-color: rgb(230, 35, 35);
+}
+div h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+#cp{
+    font-style: oblique;
+}
+div h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+} */
+/* div{
+    border: 20px dashed salmon;
+    margin: 40px;
+    padding: 20px;
+}
+div p{
+      border: 10px dashed rgb(114, 168, 250);
+      margin: 20px;
+      padding: 10px;
+}
+p{
+    border: inherit;
+    margin: inherit;
+    padding: inherit;
+} */
+body,ul,li,h1,h2,h3,a,div{
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #329da8;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+header h1{
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: 4px solid white;
+    border-radius: 25px;
+    display: inline-block;
+}
+.sec{
+    position: relative;
+}
+.sec img{
+    width: 100%;
+}
+.sec h2{
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    font-size: 1.5em;
+    color: #a86d32;
+    margin: 10px;
+    padding: 5px;
+}
+.scroll{
+    background-color: green;
+    position: sticky;
+    top: 73px;
+    padding: 25px;
+}
+.scroll ul{
+    white-space:nowrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.scroll li{
+    display: inline-block;
+    width: 25%;
+    font-size: 18px;
+}
+.scroll li a{
+    text-decoration: none;
+    color: #a4a832;
+}
+main{
+    width: 100%;
+    margin: 60 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+main h2{
+    color: #3292a8;
+    font-size: 24px;
+}
+main p{
+    color: #32a840;
+    line-height: 1.1em;
+}
+main ul{
+    text-align: center;
+    margin: 20px 0;
+    white-space: nowrap;
+}
+main li{
+    display: inline-block;
+    width: 40%;
+    margin: 5px 5%;
+}
+main li img{
+    width: 100%;
+    margin: 0 10px;
+}
+.join{
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: ivory;
+    color: #0fa0da;
+}
+.join h3{
+    font-size: 22px;
+}
+form input{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: lightskyblue;
+    border: 10px solid #bda98f4d;
+    border-radius: 15px;
+}
+footer{
+    text-align: center;
+    background-color: #1c7980a4;
+    color: chartreuse;
+    margin: 5px 10px;
+    padding: 20px;
+    font-size: 16px;
+}
+span{
+    margin: 4px 0;
+    font-size: 0.9em;
+}
+.scroll li a:hover{
+    text-decoration: underline;
+}
+li img:hover{
+    position: relative;
+    bottom: 2px;
+}
+form input:focus{
+    border: 10px solid #bbeb4c4d;
+    border-radius: 12px;
+    outline: none;
+}
+form input:valid{
+    border: 10px solid greenyellow;
+    border-radius: 12px;
+}
+p::first-letter{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+p::after{
+    content: '!!';
+}
+p::selection{
+    background-color: #78d5f1;
+    color: cornsilk;
+}
+@media screen and (max-width: 500px) {
+    .scroll li{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 410px ) {
+    .sec h2{
+        position: relative;
+        font-size: 1.2em;
+        text-align: center;
+        background-color: #05fc05;
+        margin: 0;
+        width: 100%;
+    }
+    .sec h2 br{
+        display: none;
+    }
+    header{
+        position: relative;
+    }
+    .scroll{
+        position: sticky;
+        top: 0px;
+        padding: 10px;
+    }
+    main li{
+        display: block;
+        width: 100%;
+        margin: 5px;
+    }
+    main li img{
+        width: 100%;
+        margin: 10px 10px;
+    }
+}
+@media screen and (max-width: 250px ){
+    .scroll li{
+        display: block;
+        font-size: 0.8em;
+    }
+    .scroll li a{
+        padding: 5px;
+        margin: 5px;
+    }
+}
